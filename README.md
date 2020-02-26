@@ -193,7 +193,10 @@ Try to answer the following
 3. Is there evidence of transmission between hospitals?
 4. How big is each transmission cluster?
 
+Again I would encourage you not to cheat - but the paper we wrote on this dataset can be found here for those who would like to read more - https://academic.oup.com/cid/article/65/3/433/3857742.
 
+<br />
+<br />
 
 David Eyre
 26 February 2020
