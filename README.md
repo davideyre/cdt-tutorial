@@ -62,22 +62,33 @@ You will also need a way to re-map the raw reads to a novel reference
 Most of the relevant resistance mutations and variants in Neisseria gonorrhoeae (the bacteria that causes gonorrhoea) are catelogued in the NG-STAR database - https://ngstar.canada.ca/alleles/query?lang=en
 
 If you want to know more about the ways in which gonorrhoea can become resistance to commonly used antibiotics this is a good review - https://cmr.asm.org/content/27/3/587.long
+<br />
+<br />
 
-### Task 1 - Explain ciprofloxacin resistance
-A common mutation causing ciprofloxacin resistance is found in the gyrA and results in the following amino acid change - S91F. Can you confirm if this is present in the sequence data, using the mapped data, and find another resistance determinant.
+## Task 1 - Explain ciprofloxacin resistance
+**A common mutation causing ciprofloxacin resistance is found in the *gyrA* and results in the following amino acid change - S91F. Can you confirm if this is present in the sequence data, using the mapped data, and find another resistance determinant.**
 
 Tips
-* Find the location of the gyrA gene in the reference file - https://www.ncbi.nlm.nih.gov/nuccore/NC_011035.1?report=graph - use the find function on the webpage
+* Find the location of the *gyrA* gene in the reference file - https://www.ncbi.nlm.nih.gov/nuccore/NC_011035.1?report=graph - use the find function on the webpage
 * Use biopython's `SeqIO.read()` function to read in the mapped fasta file
 * You can will need to extract the DNA sequence of the gene using it's coordinates (remember that these number from zero in python, but from one on the NCBI website!)
-* You will need to translate the DNA sequences to a protein sequence, `seq.transplate()` in biopython (for gyrA the gene is in the same direction as the DNA is numbered, if it were not you would need to generate the reverse complement sequence first), if this works you should end up with a string of amino acids represented as single letters and ending with a stop codon shown as an asterisk.
+* You will need to translate the DNA sequences to a protein sequence, `seq.transplate()` in biopython (for *gyrA* the gene is in the same direction as the DNA is numbered, if it were not you would need to generate the reverse complement sequence first), if this works you should end up with a string of amino acids represented as single letters and ending with a stop codon shown as an asterisk.
 * Compare the amino acid sequences from the reference with the sequence from the case using python, where are the differenes and what are they?
+<br />
+<br />
 
-### Task 2 - Explain the tetracycline resistance
+## Task 2 - Explain the tetracycline resistance
+**Tetracycline resistance is conferred by gain of a new gene, *tetM*, carried on a plasmid. Is this gene present?**
+
+Tips
+* Use the de novo assembly provided
+* You will need to create blast database files for the de novo assembly with this command
+```makeblastdb -dbtype nucl -in gc.contigs.fa```
+* Use the biopython blast module to run a blast command that searches for the tetM gene
 
 
 
-To provide
+# To provide
  - reference genome
  - mapped file
  - assembly
