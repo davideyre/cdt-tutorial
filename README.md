@@ -92,7 +92,7 @@ Tips
  - reference genome
  - mapped file
  - assembly
- - raw reads
+ - raw reads can be downloaded here - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_1.fastq.gz and here - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_2.fastq.gz
 
 Read the mapped file 
 
