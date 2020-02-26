@@ -102,10 +102,10 @@ geneFile = 'tetM.fa'
 assemblyFile = 'super_gc_contigs.fa'
 
 cline = NcbiblastnCommandline( query=geneFile, 
-									   db=assemblyFile, 
-									   evalue=0.01, 
-									   outfmt=5
-										)
+		db=assemblyFile, 
+		evalue=0.01, 
+		outfmt=5
+		)
 stdout, stderr = cline()
 fp = StringIO.StringIO( stdout )
 blast_records = NCBIXML.parse( fp )
@@ -199,6 +199,13 @@ Again I would encourage you not to cheat - but the paper we wrote on this datase
 
 <br />
 <br />
+
+### Required / recommended software if trying this elsewhere
+* Python, with jupyter notebook, biopython, pysam, numpy, pandas and networkx libraries
+* BLAST
+* BWA
+* samtools
+
 
 David Eyre
 26 February 2020
