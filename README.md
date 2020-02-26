@@ -82,7 +82,7 @@ Tips
 
 Tips
 * Use the de novo assembly provided
-* You will need to create blast database files for the de novo assembly with this command
+* You will need to create blast database files for the de novo assembly with this command:  
 ```makeblastdb -dbtype nucl -in gc.contigs.fa```
 * Use the biopython blast module to run a blast command that searches for the tetM gene
 
