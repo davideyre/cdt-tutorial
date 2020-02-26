@@ -206,7 +206,7 @@ Again I would encourage you not to cheat - but the paper we wrote on this datase
 * BWA
 * samtools
 
-
-David Eyre
-26 February 2020
+<br />
+David Eyre  
+26 February 2020  
 david.eyre@bdi.ox.ac.uk
