@@ -207,6 +207,6 @@ Again I would encourage you not to cheat - but the paper we wrote on this datase
 * samtools
 
 <br />
-David Eyre  
-26 February 2020  
-david.eyre@bdi.ox.ac.uk
+David Eyre<br />
+26 February 2020<br />
+david.eyre@bdi.ox.ac.uk<br />
