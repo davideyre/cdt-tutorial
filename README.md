@@ -3,7 +3,7 @@
 ## Detecting antimicrobial resistance determinants
 
 ### Overview
-In this tutorial you will learn how to use various scriptable approaches to detect different antimicrobial resistance determinants. The tutorial will be mostly based using python, but also rely on additional software packages. Please produce your answers as an annotated python jupyter notebook.
+In this tutorial you will learn how to use various scriptable approaches to detect different antimicrobial resistance determinants and use sequencing data to assess the extent of transmission of infection in hospitals. The tutorial will be mostly based using python, but also rely on additional software packages. Please produce your answers as an annotated python jupyter notebook.
 
 Files for Tasks 1-4 can be found in the `super_gonorrhoea` folder and files for Task 5 in the `hospital_transmission` folder.
 
