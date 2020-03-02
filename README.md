@@ -3,7 +3,7 @@
 ## Detecting antimicrobial resistance determinants
 
 ### Overview
-In this tutorial you will learn how to use various scriptable approaches to detect different antimicrobial resistance determinants. The tutorial will be mostly based using python, but also rely on additional software packages. Please produce your answers as an annotated python jupyter notebook.
+In this tutorial you will learn how to use various scriptable approaches to detect different antimicrobial resistance determinants and use sequencing data to assess the extent of transmission of infection in hospitals. The tutorial will be mostly based using Python, but also rely on additional software packages. Please produce your answers as an annotated Python jupyter notebook.
 
 Files for Tasks 1-4 can be found in the `super_gonorrhoea` folder and files for Task 5 in the `hospital_transmission` folder.
 
@@ -30,7 +30,7 @@ Neither approach works well where there are multiple copies of a gene in a genom
 In February 2018, a patient was diagnosed with the most difficult to treat gonorrhoea ever described. You can read more about it here - https://www.bbc.co.uk/news/health-43571120 - and his suscessful treatment here - https://www.bbc.co.uk/news/health-43840505. The more scientific version is here - https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2018.23.27.1800323 - but I would encourage not to look at this too closely to start with, as it contains many of the answers!
 
 Two isolates from this infection were sequenced using Illumina technology. You are provided with one example, including the following files:
-* Sequence reads - the raw output of the sequencer - these are too large to include in this repository and can be downloaded from ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_1.fastq.gz and here - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_2.fastq.gz
+* Sequence reads - the raw output of the sequencer - these are too large to include in this repository and can be downloaded from http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_1.fastq.gz and here - http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_2.fastq.gz
 * A ready-made mapped concensus fasta file - `super_gc_mapped.fa`
 * A ready-made de novo assembly `super_gc_contigs.fa`
 * A copy of the reference genome to be used for comparisons `reference.fa`
