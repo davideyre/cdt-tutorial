@@ -77,7 +77,7 @@ Tips
 * Find the location of the *gyrA* gene in the reference file using the NCBI website - https://www.ncbi.nlm.nih.gov/nuccore/NC_011035.1?report=graph - use the find function on the webpage
 * Use biopython's `SeqIO.read()` function to read in the mapped fasta file `super_gc_mapped.fa` (https://biopython.org/wiki/SeqIO)
 * You can will need to extract the DNA sequence of the gene using it's coordinates within the whole genome (remember that these number from zero in python, but from one on the NCBI website!)
-* You will need to translate the DNA sequences to a protein sequence, `seq.transplate()` in biopython (for *gyrA* the gene is in the same direction as the DNA is numbered, if it were not you would need to generate the reverse complement sequence first), if this works you should end up with a string of amino acids represented as single letters and ending with a stop codon shown as an asterisk.
+* You will need to translate the DNA sequences to a protein sequence, `seq.translate()` in biopython (for *gyrA* the gene is in the same direction as the DNA is numbered, if it were not you would need to generate the reverse complement sequence first), if this works you should end up with a string of amino acids represented as single letters and ending with a stop codon shown as an asterisk.
 * Compare the amino acid sequences from the reference with the sequence from the case using python, where are the differenes and what are they?
 <br />
 <br />
