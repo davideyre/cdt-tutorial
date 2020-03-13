@@ -230,7 +230,7 @@ However I suggest you now move on to a different task. I'm assuming you have alr
 
 This is a less structured task than those above, you are provided with two files
 * `sample_list.csv` which contains a list of 973 samples, each from one of six sites or hospitals, you are provided with collection dates, rt (the samples ribotype - a way of grouping *C. difficile*), the fecal_tox column tells you if POS then the patient has disease and if NEG then they are a carrier, the toxigenic column tells you whether this strain has toxin genes present
-* `pairwise_snps.csv` contains the pairwise genetic distances (SNP differences) between all samples obtained from a maximum likelihood phylogeny corrected for the effect of recombindation, using a tool called ClonalFrameML
+* `pairwise_snps.csv` contains the pairwise genetic distances (SNP differences) between all samples obtained from a maximum likelihood phylogeny corrected for the effect of recombindation, using a tool called ClonalFrameML. The id1 and id2 columns here correspond to the id column in the samples file.
 
 Generally speaking cases acquired from each other are within ≤2 SNPs >95% of the time.
 
