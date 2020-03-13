@@ -240,9 +240,8 @@ Try to answer the following
 1. Which hospital has the most transmission?
 2. Which are more infectious - fecal_tox positive or negative cases (to do this you could convert at the equivocal results (EQ) to be positive (POS)?
 3. Is there evidence of transmission between hospitals?
-4. How big is each transmission cluster?
 
-Again I would encourage you not to cheat - but the paper we wrote on this dataset can be found here for those who would like to read more - https://academic.oup.com/cid/article/65/3/433/3857742.
+Again I would encourage you not to cheat - but the paper we wrote on this dataset can be found here for those who would like to read more - https://academic.oup.com/cid/article/65/3/433/3857742. If you have more time you could consider analysing the size of each transmission cluster. You could consider using networkX to do this - https://networkx.github.io - but this is probably beyond the scope of this practical.
 
 <br />
 <br />
