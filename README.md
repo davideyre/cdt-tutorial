@@ -7,6 +7,8 @@ In this tutorial you will learn how to use various scriptable approaches to dete
 
 Files for Tasks 1-4 can be found in the `super_gonorrhoea` folder and files for Task 5 in the `hospital_transmission` folder.
 
+If you get stuck there are answers available in html and jupyter notebook format in the `answers` folder, but I'd encourage you to have a good try at trying to answer before looking through these if possible.
+
 
 ### Background
 As discussed in the lecture, antimicrobial resistance can be determined by several mechanisms
