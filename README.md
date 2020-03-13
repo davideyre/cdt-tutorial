@@ -30,7 +30,7 @@ Neither approach works well where there are multiple copies of a gene in a genom
 In February 2018, a patient was diagnosed with the most difficult to treat gonorrhoea ever described. You can read more about it here - https://www.bbc.co.uk/news/health-43571120 - and his suscessful treatment here - https://www.bbc.co.uk/news/health-43840505. The more scientific version is here - https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2018.23.27.1800323 - but I would encourage not to look at this too closely to start with, as it contains many of the answers!
 
 Two isolates from this infection were sequenced using Illumina technology. You are provided with one example, including the following files:
-* Sequence reads - the raw output of the sequencer - these are too large to include in this repository and can be downloaded from http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_1.fastq.gz and here - http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_2.fastq.gz (alternatively if running this practical during the course - please copy from `/cdtshared/wgs_practical`
+* Sequence reads - the raw output of the sequencer - these are too large to include in this repository and can be downloaded from http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_1.fastq.gz and here - http://ftp.sra.ebi.ac.uk/vol1/fastq/ERR256/009/ERR2560139/ERR2560139_2.fastq.gz (alternatively if running this practical during the course - please copy from `/cdtshared/wgs_practical`)
 * A ready-made mapped concensus fasta file - `super_gc_mapped.fa`
 * A ready-made de novo assembly `super_gc_contigs.fa`
 * A copy of the reference genome to be used for comparisons `reference.fa`
