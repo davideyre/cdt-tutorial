@@ -197,19 +197,21 @@ os.system(cmd)
 ```  
 This will take a few minutes to run - either use the jupyter file browser or the command line to monitor the output files progress and wait for a 0 to appear in the jupyter notebook output before proceeding further. If you prefer you can run these commands directly on the command line instead. I would start to read Task 5 while you are waiting.
 
-* Now put the mapped reads into a sorted BAM file and index it using samtools
+* Now put the mapped reads into a sorted BAM file and index it using samtools, this may take a minute or sort, again wait for the output from jupyter to show a zero, i.e. sucessful completion
 ```
 # put the mapped reads (-F 4) into sorted Bam
+out_bam = '23s_mapped.bam'
 cmd = 'samtools view -uS -F 4 %s | samtools sort - -o %s'%(out_sam, out_bam)
-print cmd
+print(cmd)
 os.system(cmd)
 
 cmd = 'samtools index %s'%out_bam
-print cmd
+print(cmd)
 os.system(cmd)
 ```
 * now use pysam to check what proportion of reads contain the variant, using a construct starting similar to this...
 ```
+import pysam
 samfile = pysam.Samfile(out_bam, "rb")
 for pileupcolumn in samfile.pileup( '23s_rna', 2000, 2600):
 	for pileupread in pileupcolumn.pileups:
