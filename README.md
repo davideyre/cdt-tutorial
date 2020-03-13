@@ -107,10 +107,10 @@ This relies on using python to identify the gene in the whole genome andconvert 
 
 Tips
 * Find the location of the *gyrA* gene in the reference file using the NCBI website - https://www.ncbi.nlm.nih.gov/nuccore/NC_011035.1?report=graph - use the find function on the webpage
-* Use biopython's `SeqIO.read()` function to read in the mapped fasta file `super_gc_mapped.fa` (https://biopython.org/wiki/SeqIO)
+* Use biopython's `SeqIO.read()` function to read in the mapped fasta file `cdt-tutorial/super_gonorrhoea/super_gc_mapped.fa` (https://biopython.org/wiki/SeqIO)
 * You can will need to extract the DNA sequence of the gene using it's coordinates within the whole genome (remember that these number from zero in python, but from one on the NCBI website!)
 * You will need to translate the DNA sequences to a protein sequence, `seq.translate()` in biopython (for *gyrA* the gene is in the same direction as the DNA is numbered, if it were not you would need to generate the reverse complement sequence first), if this works you should end up with a string of amino acids represented as single letters and ending with a stop codon shown as an asterisk.
-* Compare the amino acid sequences from the reference with the sequence from the case using python, does the reference share any mutations or have any different mutations in *gyrA* (hint the reference sequence is also ciprofloxacin resistant)?
+* Compare the amino acid sequences from the reference (`cdt-tutorial/super_gonorrhoea/reference.fa` ) with the sequence from the case using python, does the reference share any mutations or have any different mutations in *gyrA* (hint the reference sequence is also ciprofloxacin resistant)?
 <br />
 <br />
 
@@ -124,22 +124,32 @@ Tips
 * Use the de novo assembly provided `super_gc_contigs.fa`
 * You will need to create blast database files for the de novo assembly with this command:  
 ```makeblastdb -dbtype nucl -in super_gc_contigs.fa```
+This can be done using this snippet in python to run the command within the notebook:
+```
+import os
+cmd = 'makeblastdb -dbtype nucl -in cdt-tutorial/super_gonorrhoea/super_gc_contigs.fa'
+os.system(cmd)
+```
+
 * Use the biopython blast module to run a blast command that searches for the tetM gene, to get you started:  
 ```
 from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbiblastnCommandline
-import StringIO
+from io import StringIO
+import os
+
+os.chdir('cdt-tutorial/super_gonorrhoea/')
 
 geneFile = 'tetM.fa'
 assemblyFile = 'super_gc_contigs.fa'
 
 cline = NcbiblastnCommandline( query=geneFile, 
-		db=assemblyFile, 
-		evalue=0.01, 
-		outfmt=5
-		)
+         db=assemblyFile, 
+         evalue=0.01, 
+         outfmt=5
+         )
 stdout, stderr = cline()
-fp = StringIO.StringIO( stdout )
+fp = StringIO( stdout )
 blast_records = NCBIXML.parse( fp )
 ```
 This snippet will run blast, saving the output in XML format, this is then passed back to python. You should be able interrogate the `blast_records` object to look for any matches found. Details of the contents of the object can be found here - http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc93.
