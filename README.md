@@ -69,7 +69,7 @@ If you want to know more about the ways in which gonorrhoea can become resistanc
 <br />
 
 ## Set up for CDT practical users
-Log in to your CDT remote machine while setting up port forwarding to run jupyter remotely, editing the `user_name` and `remote_up` to your normal settings
+Log in to your CDT remote machine while setting up port forwarding to run jupyter remotely, editing the `user_name` and `remote_up` to your normal settings. If this command times out, then please run it again and it should work.
 
 ```
 ssh -L localhost:8888:localhost:8889 user_name@remote_ip
