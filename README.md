@@ -80,11 +80,23 @@ Then run the following command to load the software modules you will need (note 
 module load BLAST/2.10.0-Linux_x86_64 Biopython/1.74-foss-2019a Pysam/0.15.2-GCC-8.2.0-2.31.1 SciPy-bundle/2019.03-foss-2019a BWA/0.7.17-GCC-8.2.0-2.31.1 IPython/7.7.0-foss-2019a-Python-3.7.2 SAMtools/1.9-GCC-8.2.0-2.31.1 networkx/2.4-foss-2019a-Python-3.7.2
 ```
 
+Clone this repository into your home directory so you have the files for the practical:
+```
+git clone https://github.com/davideyre/cdt-tutorial/
+```
+
+Start a jupyter notebook running on the server:
+```
+jupyter notebook --no-browser --port=8889
+```
+
 Now open you your browser locally and browse to
 
 ```
-http://localhost:8888/
+http://localhost:8888/?token=YOUR_TOKEN
 ```
+
+You will need copy the token value from your SSH session - but don't copy the whole string as the port number will then be 8889 rather than 8888. Look for the line after `The Jupyter Notebook is running at:`.
 
 You should now be able to run the practical from your browser if you make use of the python to call any local commands to these appear in the notebook too.
 
