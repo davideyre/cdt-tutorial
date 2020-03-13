@@ -68,6 +68,26 @@ If you want to know more about the ways in which gonorrhoea can become resistanc
 <br />
 <br />
 
+## Set up for CDT practical users
+Log in to your CDT remote machine while setting up port forwarding to run jupyter remotely, editing the `user_name` and `remote_up` to your normal settings
+
+```
+ssh -L localhost:8888:localhost:8889 user_name@remote_ip
+```
+
+Then run the following command to load the software modules you will need (note this is a long string and so you need to make sure you have all of it!)
+```
+module load BLAST/2.10.0-Linux_x86_64 Biopython/1.74-foss-2019a Pysam/0.15.2-GCC-8.2.0-2.31.1 SciPy-bundle/2019.03-foss-2019a BWA/0.7.17-GCC-8.2.0-2.31.1 IPython/7.7.0-foss-2019a-Python-3.7.2 SAMtools/1.9-GCC-8.2.0-2.31.1 networkx/2.4-foss-2019a-Python-3.7.2
+```
+
+Now open you your browser locally and browse to
+
+```
+http://localhost:8888/
+```
+
+You should now be able to run the practical from your browser if you make use of the python to call any local commands to these appear in the notebook too.
+
 ## Task 1 - Explain ciprofloxacin resistance
 **A common mutation causing ciprofloxacin resistance is found in the *gyrA* and results in the following amino acid change - S91F. Can you confirm if this is present in the sequence data, using the mapped data, and find another resistance determinant?**
 
