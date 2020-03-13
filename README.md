@@ -164,7 +164,7 @@ A number of mechanisms can change how susceptible N. gonorrhoeae is to ceftriaxo
 Tips
 * Start as in Task 2, using the assembly as the blast database and this time using the list of *penA* alleles as the query `penA_alleles.fa` (if you want you can also try this task in reverse using the list of *penA* alleles as the database, to do this you'll need to run makeblastdb on the command line as above)
 * You will get multiple hits, you need to define which hit is the closest match
-* Once you find which hit is the closest match, check to see if there is an exact match, and translate the sequence to see which of these amino acid substitutions is present - A311V, T316P and T483S
+* Once you find which hit is the closest match, check to see if there is an exact match, and translate the sequence to see which of these amino acid substitutions is present - A311V, T316P and T483S (for this last part you may wish to turn the `hsp.sbjct` text from the BLAST output back into a BioPython sequence object - this will help you - https://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html).
 
 <br />
 <br />
