@@ -182,17 +182,21 @@ Tips
 `bwa index 23s_reference.fa`  
 It may be worth doing this within the python notebook, so you can track this too as part of your answer, e.g.  
 ```
-cmd = '%s/bwa index %s'%(bwaPath, ref)
-print cmd
+cmd = 'bwa index 23s_reference.fa'
 os.system(cmd)
 ```
 * now map the reads using something based on this snippet, where fq1 and fq2 are the two files downloaded from the short read archive above
 ```
-cmd = '%s/bwa mem -t 4 %s %s %s > %s'%(bwaPath, ref, fq1, fq2, out_sam)
-print cmd
+ref = '23s_reference.fa'
+fq1 = '/cdtshared/wgs_practical/ERR2560139_1.fastq.gz'
+fq2 = '/cdtshared/wgs_practical/ERR2560139_2.fastq.gz'
+out_sam = '23s_mapped.sam'
+cmd = 'bwa mem -t 4 %s %s %s > %s'%(ref, fq1, fq2, out_sam)
+print(cmd)
 os.system(cmd)
 ```  
-This will take a few minutes to run
+This will take a few minutes to run - either use the jupyter file browser or the command line to monitor the output files progress and wait for a 0 to appear in the jupyter notebook output before proceeding further. If you prefer you can run these commands directly on the command line instead. I would start to read Task 5 while you are waiting.
+
 * Now put the mapped reads into a sorted BAM file and index it using samtools
 ```
 # put the mapped reads (-F 4) into sorted Bam
