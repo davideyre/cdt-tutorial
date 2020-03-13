@@ -234,7 +234,7 @@ This is a less structured task than those above, you are provided with two files
 
 Generally speaking cases acquired from each other are within ≤2 SNPs >95% of the time.
 
-For this investigation you will need to ignore non-toxigenic cases.
+For this investigation you will need to ignore non-toxigenic cases (toxigenic==0).
 
 Try to answer the following
 1. Which hospital has the most transmission?
