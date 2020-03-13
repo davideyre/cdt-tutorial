@@ -13303,7 +13303,7 @@ Seq(&#39;MTDATIRHDHKFALETLPVSLEDEMRKSYLDYAMSVIVGRALPDVRDGLKPVHR...EN*&#39;, HasS
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13321,7 +13321,7 @@ Seq(&#39;MTDATIRHDHKFALETLPVSLEDEMRKSYLDYAMSVIVGRALPDVRDGLKPVHR...EN*&#39;, HasS
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[6]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -13399,7 +13399,7 @@ Seq(&#39;MTDATIRHDHKFALETLPVSLEDEMRKSYLDYAMSVIVGRALPDVRDGLKPVHR...EN*&#39;, HasS
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Blast</span> <span class="k">import</span> <span class="n">NCBIXML</span>
@@ -15872,7 +15872,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -15889,7 +15889,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">samples</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
@@ -15905,7 +15905,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[69]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -16070,7 +16070,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[171]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">samples</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;fecal_tox&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -16086,7 +16086,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[171]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -16130,6 +16130,16 @@ samtools index 23s_mapped.bam
   </thead>
   <tbody>
     <tr>
+      <th>EQ</th>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
       <th>NEG</th>
       <td>510</td>
       <td>510</td>
@@ -16141,13 +16151,13 @@ samtools index 23s_mapped.bam
     </tr>
     <tr>
       <th>POS</th>
-      <td>463</td>
-      <td>463</td>
-      <td>463</td>
-      <td>463</td>
-      <td>463</td>
-      <td>463</td>
-      <td>463</td>
+      <td>453</td>
+      <td>453</td>
+      <td>453</td>
+      <td>453</td>
+      <td>453</td>
+      <td>453</td>
+      <td>453</td>
     </tr>
   </tbody>
 </table>
@@ -16162,7 +16172,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[172]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">samples</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">samples</span><span class="p">[</span><span class="s1">&#39;fecal_tox&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;EQ&#39;</span><span class="p">,</span> <span class="s1">&#39;fecal_tox&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;POS&#39;</span>
@@ -16179,7 +16189,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[172]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -16255,7 +16265,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[173]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">snps</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
@@ -16271,7 +16281,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[173]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -16381,7 +16391,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">samples</span><span class="p">))</span>
@@ -16425,7 +16435,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">snps</span><span class="p">))</span>
@@ -16467,7 +16477,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">snps2_rev</span> <span class="o">=</span> <span class="n">snps2</span><span class="p">[[</span><span class="s1">&#39;id2&#39;</span><span class="p">,</span> <span class="s1">&#39;id1&#39;</span><span class="p">,</span> <span class="s1">&#39;snps&#39;</span><span class="p">]]</span>
@@ -16486,7 +16496,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[176]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -16511,7 +16521,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[177]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">j1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">snps2_all</span><span class="p">,</span> <span class="n">toxigenic_samples</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;id1&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;id&#39;</span><span class="p">)</span>
@@ -16544,7 +16554,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[178]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">merged</span>
@@ -16560,7 +16570,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[178]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -17969,7 +17979,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[179]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">merged_ordered</span> <span class="o">=</span> <span class="n">merged</span><span class="p">[</span><span class="n">merged</span><span class="p">[</span><span class="s1">&#39;collectdt_1&#39;</span><span class="p">]</span><span class="o">&lt;</span><span class="n">merged</span><span class="p">[</span><span class="s1">&#39;collectdt_2&#39;</span><span class="p">]]</span>
@@ -17986,7 +17996,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[179]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -18011,7 +18021,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[180]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">merged_hospital</span> <span class="o">=</span> <span class="n">merged_ordered</span><span class="p">[</span><span class="n">merged_ordered</span><span class="p">[</span><span class="s1">&#39;site_1&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">merged_ordered</span><span class="p">[</span><span class="s1">&#39;site_2&#39;</span><span class="p">]]</span>
@@ -18028,7 +18038,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[180]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -18046,17 +18056,17 @@ samtools index 23s_mapped.bam
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now get a count of the number of cases at each hospital with a prior case within ≤ 2 SNPs, and compare this to the total number of cases:</p>
+<p>Now get a count of the number of cases at each hospital with a prior case within ≤ 2 SNPs, and compare this to the total number of cases. We need to only count one link per recipient case.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[181]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">links</span> <span class="o">=</span> <span class="n">merged_hospital</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;site_1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;id1&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">links</span> <span class="o">=</span> <span class="n">merged_hospital</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;site_1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">id_2</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
 <span class="n">df_links</span> <span class="o">=</span> <span class="n">links</span><span class="o">.</span><span class="n">rename_axis</span><span class="p">(</span><span class="s1">&#39;site&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;links&#39;</span><span class="p">)</span>
 <span class="n">df_links</span>
 </pre></div>
@@ -18071,7 +18081,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[181]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -18102,32 +18112,32 @@ samtools index 23s_mapped.bam
     <tr>
       <th>0</th>
       <td>1</td>
-      <td>48</td>
+      <td>34</td>
     </tr>
     <tr>
       <th>1</th>
       <td>8</td>
-      <td>18</td>
+      <td>15</td>
     </tr>
     <tr>
       <th>2</th>
       <td>9</td>
-      <td>87</td>
+      <td>47</td>
     </tr>
     <tr>
       <th>3</th>
       <td>b</td>
-      <td>63</td>
+      <td>36</td>
     </tr>
     <tr>
       <th>4</th>
       <td>c</td>
-      <td>40</td>
+      <td>21</td>
     </tr>
     <tr>
       <th>5</th>
       <td>d</td>
-      <td>15</td>
+      <td>13</td>
     </tr>
   </tbody>
 </table>
@@ -18142,7 +18152,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[182]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cases</span> <span class="o">=</span> <span class="n">toxigenic_samples</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;site&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
@@ -18160,7 +18170,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[182]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -18231,7 +18241,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[183]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">summary</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_cases</span><span class="p">,</span> <span class="n">df_links</span><span class="p">)</span>
@@ -18249,7 +18259,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[183]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -18283,43 +18293,43 @@ samtools index 23s_mapped.bam
       <th>0</th>
       <td>1</td>
       <td>175</td>
-      <td>48</td>
-      <td>27.4</td>
+      <td>34</td>
+      <td>19.4</td>
     </tr>
     <tr>
       <th>1</th>
       <td>8</td>
       <td>136</td>
-      <td>18</td>
-      <td>13.2</td>
+      <td>15</td>
+      <td>11.0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>9</td>
       <td>183</td>
-      <td>87</td>
-      <td>47.5</td>
+      <td>47</td>
+      <td>25.7</td>
     </tr>
     <tr>
       <th>3</th>
       <td>b</td>
       <td>162</td>
-      <td>63</td>
-      <td>38.9</td>
+      <td>36</td>
+      <td>22.2</td>
     </tr>
     <tr>
       <th>4</th>
       <td>c</td>
       <td>110</td>
-      <td>40</td>
-      <td>36.4</td>
+      <td>21</td>
+      <td>19.1</td>
     </tr>
     <tr>
       <th>5</th>
       <td>d</td>
       <td>87</td>
-      <td>15</td>
-      <td>17.2</td>
+      <td>13</td>
+      <td>14.9</td>
     </tr>
   </tbody>
 </table>
@@ -18335,18 +18345,18 @@ samtools index 23s_mapped.bam
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Site 9 has the most transmission, and site 8 the least using this metric.</p>
-<h3 id="Define-which-cases-are-more-infectious">Define which cases are more infectious<a class="anchor-link" href="#Define-which-cases-are-more-infectious">&#182;</a></h3><p>We will use the same dataframe merged_hospital, but also group by the fecal toxin column for the source case, i.e. the earlier case, case 1:</p>
+<p>Site 9 has the most transmission, and site 8 the least using this metric. In the paper we only consider recipients occuring after the first 90 days of the study at each hospital, you could considered trying this here.</p>
+<h3 id="Define-which-cases-are-more-infectious">Define which cases are more infectious<a class="anchor-link" href="#Define-which-cases-are-more-infectious">&#182;</a></h3><p>We will use the same dataframe merged_hospital, but group by the fecal toxin column for the source case, i.e. the earlier case, case 1, and count the number of unique second cases linked to each fecal toxin type.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[189]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span> <span class="o">=</span> <span class="n">merged_hospital</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;fecal_tox_1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;id2&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span> <span class="o">=</span> <span class="n">merged_hospital</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;fecal_tox_1&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">id_2</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
 <span class="n">links_tox</span> <span class="o">=</span> <span class="n">tmp</span><span class="o">.</span><span class="n">rename_axis</span><span class="p">(</span><span class="s1">&#39;fecal_tox&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;links&#39;</span><span class="p">)</span>
 <span class="n">links_tox</span>
 </pre></div>
@@ -18361,7 +18371,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[189]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -18392,12 +18402,12 @@ samtools index 23s_mapped.bam
     <tr>
       <th>0</th>
       <td>NEG</td>
-      <td>152</td>
+      <td>105</td>
     </tr>
     <tr>
       <th>1</th>
       <td>POS</td>
-      <td>119</td>
+      <td>92</td>
     </tr>
   </tbody>
 </table>
@@ -18412,7 +18422,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[190]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span> <span class="o">=</span> <span class="n">toxigenic_samples</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;fecal_tox&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
@@ -18430,7 +18440,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[190]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -18481,7 +18491,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[191]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">summary_tox</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">cases_tox</span><span class="p">,</span> <span class="n">links_tox</span><span class="p">)</span>
@@ -18499,7 +18509,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[191]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -18533,15 +18543,15 @@ samtools index 23s_mapped.bam
       <th>0</th>
       <td>NEG</td>
       <td>405</td>
-      <td>152</td>
-      <td>37.5</td>
+      <td>105</td>
+      <td>25.9</td>
     </tr>
     <tr>
       <th>1</th>
       <td>POS</td>
       <td>448</td>
-      <td>119</td>
-      <td>26.6</td>
+      <td>92</td>
+      <td>20.5</td>
     </tr>
   </tbody>
 </table>
@@ -18565,7 +18575,7 @@ samtools index 23s_mapped.bam
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[192]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">merged_ordered</span><span class="p">[</span><span class="n">merged_ordered</span><span class="p">[</span><span class="s1">&#39;site_1&#39;</span><span class="p">]</span><span class="o">!=</span><span class="n">merged_ordered</span><span class="p">[</span><span class="s1">&#39;site_2&#39;</span><span class="p">]]</span>
@@ -18581,7 +18591,7 @@ samtools index 23s_mapped.bam
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[192]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
