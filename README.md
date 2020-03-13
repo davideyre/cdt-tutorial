@@ -238,7 +238,7 @@ For this investigation you will need to ignore non-toxigenic cases (toxigenic==0
 
 Try to answer the following
 1. Which hospital has the most transmission?
-2. Which are more infectious - fecal_tox positive or negative cases?
+2. Which are more infectious - fecal_tox positive or negative cases (to do this you could convert at the equivocal results (EQ) to be positive (POS)?
 3. Is there evidence of transmission between hospitals?
 4. How big is each transmission cluster?
 
