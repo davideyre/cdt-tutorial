@@ -136,7 +136,6 @@ os.system(cmd)
 from Bio.Blast import NCBIXML
 from Bio.Blast.Applications import NcbiblastnCommandline
 from io import StringIO
-import os
 
 os.chdir('cdt-tutorial/super_gonorrhoea/')
 
@@ -150,7 +149,7 @@ cline = NcbiblastnCommandline( query=geneFile,
          )
 stdout, stderr = cline()
 fp = StringIO( stdout )
-blast_records = NCBIXML.parse( fp )
+blast_records = [r for r in NCBIXML.parse( fp )]
 ```
 This snippet will run blast, saving the output in XML format, this is then passed back to python. You should be able interrogate the `blast_records` object to look for any matches found. Details of the contents of the object can be found here - http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc93.
 * Did you find an alignment match? How much of the total length of the tetM gene was matched? How similar was it to the tetM sequence in `tetM.fa`?
