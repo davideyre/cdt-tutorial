@@ -2,6 +2,18 @@
 
 ## Detecting antimicrobial resistance determinants
 
+Install mini-conda
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash ./Miniconda3-latest-Linux-x86_64.sh
+```
+
+Create conda environment
+```bash
+conda create -n cdt -c conda-forge -c bioconda biopython blast notebook pysam networkx bwa samtools scipy
+```
+
+
 ### Overview
 In this tutorial you will learn how to use various scriptable approaches to detect different antimicrobial resistance determinants and use sequencing data to assess the extent of transmission of infection in hospitals. The tutorial will be mostly based using Python, but also rely on additional software packages. Please produce your answers as an annotated Python jupyter notebook.
 
