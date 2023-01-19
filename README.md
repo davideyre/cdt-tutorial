@@ -10,7 +10,7 @@ bash ./Miniconda3-latest-Linux-x86_64.sh
 
 Create conda environment
 ```bash
-conda create -n cdt -c conda-forge -c bioconda biopython blast notebook pysam networkx bwa samtools scipy
+conda create -n cdt -c conda-forge -c bioconda biopython=1.78 blast notebook pysam networkx bwa samtools scipy
 ```
 
 
