@@ -2,18 +2,6 @@
 
 ## Detecting antimicrobial resistance determinants
 
-Install mini-conda
-```
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash ./Miniconda3-latest-Linux-x86_64.sh
-```
-
-Create conda environment
-```bash
-conda create -n cdt -c conda-forge -c bioconda biopython=1.78 blast notebook pysam networkx bwa samtools scipy
-```
-
-
 ### Overview
 In this tutorial you will learn how to use various scriptable approaches to detect different antimicrobial resistance determinants and use sequencing data to assess the extent of transmission of infection in hospitals. The tutorial will be mostly based using Python, but also rely on additional software packages. Please produce your answers as an annotated Python jupyter notebook.
 
@@ -91,7 +79,7 @@ ssh -L localhost:8888:localhost:8889 user_name@remote_ip
 
 Then run the following command to load the software modules you will need (note this is a long string and so you need to make sure you have all of it!)
 ```
-module load BLAST/2.10.0-Linux_x86_64 Biopython/1.74-foss-2019a Pysam/0.15.2-GCC-8.2.0-2.31.1 SciPy-bundle/2019.03-foss-2019a BWA/0.7.17-GCC-8.2.0-2.31.1 IPython/7.7.0-foss-2019a-Python-3.7.2 SAMtools/1.9-GCC-8.2.0-2.31.1 networkx/2.4-foss-2019a-Python-3.7.2
+module load BLAST/2.11.0-Linux_x86_64 Biopython/1.78-foss-2020b Pysam/0.16.0.1-GCC-10.2.0 SciPy-bundle/2022.05-foss-2022a BWA/0.7.17-GCC-10.2.0 IPython/7.18.1-GCCcore-10.2.0 SAMtools/1.12-GCC-10.2.0 networkx/2.5-foss-2020b
 ```
 
 Clone this repository into your home directory so you have the files for the practical:
