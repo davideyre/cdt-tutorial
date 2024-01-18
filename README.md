@@ -190,8 +190,8 @@ os.system(cmd)
 * now map the reads using something based on this snippet, where fq1 and fq2 are the two files downloaded from the short read archive above
 ```
 ref = '23s_reference.fa'
-fq1 = '/cdtshared/wgs_practical/ERR2560139_1.fastq.gz'
-fq2 = '/cdtshared/wgs_practical/ERR2560139_2.fastq.gz'
+fq1 = '/data/cdtshared/Cohort-2020/wgs_practical/ERR2560139_1.fastq.gz'
+fq2 = '/data/cdtshared/Cohort-2020/wgs_practical/ERR2560139_2.fastq.gz'
 out_sam = '23s_mapped.sam'
 cmd = 'bwa mem -t 4 %s %s %s > %s'%(ref, fq1, fq2, out_sam)
 print(cmd)
