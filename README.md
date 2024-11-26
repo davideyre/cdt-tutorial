@@ -79,7 +79,7 @@ ssh -L localhost:8888:localhost:8889 user_name@remote_ip
 
 Then run the following command to load the software modules you will need (note this is a long string and so you need to make sure you have all of it!)
 ```
-module load BLAST/2.11.0-Linux_x86_64 Biopython/1.78-foss-2020b Pysam/0.16.0.1-GCC-10.2.0 SciPy-bundle/2022.05-foss-2022a BWA/0.7.17-GCC-10.2.0 IPython/7.18.1-GCCcore-10.2.0 SAMtools/1.12-GCC-10.2.0 networkx/2.5-foss-2020b
+module load Biopython/1.78-foss-2023a SciPy-bundle/2023.07-gfbf-2023a BLAST/2.11.0-Linux_x86_64 Pysam/0.22.0-GCC-12.3.0 IPython/8.14.0-GCCcore-12.3.0 SAMtools/1.18-GCC-12.3.0 networkx/3.1-gfbf-2023a BWA/0.7.18-GCCcore-12.3.0
 ```
 
 Clone this repository into your home directory so you have the files for the practical:
