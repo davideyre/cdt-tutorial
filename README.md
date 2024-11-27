@@ -74,12 +74,12 @@ If you want to know more about the ways in which gonorrhoea can become resistanc
 Log in to your CDT remote machine while setting up port forwarding to run jupyter remotely, editing the `user_name` and `remote_up` to your normal settings. If this command times out, then please run it again and it should work.
 
 ```
-ssh -L localhost:8888:localhost:8889 user_name@remote_ip
+ssh -L 8888:localhost:8888 user_name@remote_ip
 ```
 
 Then run the following command to load the software modules you will need (note this is a long string and so you need to make sure you have all of it!)
 ```
-module load Biopython/1.78-foss-2023a SciPy-bundle/2023.07-gfbf-2023a BLAST/2.11.0-Linux_x86_64 Pysam/0.22.0-GCC-12.3.0 IPython/8.14.0-GCCcore-12.3.0 SAMtools/1.18-GCC-12.3.0 networkx/3.1-gfbf-2023a BWA/0.7.18-GCCcore-12.3.0
+module load Biopython/1.78-foss-2023a SciPy-bundle/2023.07-gfbf-2023a BLAST/2.11.0-Linux_x86_64 Pysam/0.22.0-GCC-12.3.0 IPython/8.14.0-GCCcore-12.3.0 SAMtools/1.18-GCC-12.3.0 networkx/3.1-gfbf-2023a BWA/0.7.18-GCCcore-12.3.0 JupyterNotebook/7.0.2-GCCcore-12.3.0
 ```
 
 Clone this repository into your home directory so you have the files for the practical:
