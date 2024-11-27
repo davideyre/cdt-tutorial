@@ -89,7 +89,7 @@ git clone https://github.com/davideyre/cdt-tutorial/
 
 Start a jupyter notebook running on the server:
 ```
-jupyter notebook --no-browser --port=8889
+jupyter notebook --no-browser --port=8888
 ```
 
 Now open you your browser locally and browse to
@@ -98,7 +98,9 @@ Now open you your browser locally and browse to
 http://localhost:8888/?token=YOUR_TOKEN
 ```
 
-You will need copy the token value from your SSH session - but don't copy the whole string as the port number will then be 8889 rather than 8888. Look for the line after `The Jupyter Notebook is running at:`.
+You will need copy the token value from your SSH session.
+
+If you find port 8888 is occupied, the re-run the commands above, e.g. substituting 8888 for 8889 throughout.
 
 You should now be able to run the practical from your browser if you make use of the python to call any local commands to these appear in the notebook too.
 
